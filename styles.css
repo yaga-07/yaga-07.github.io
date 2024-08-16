@@ -26,11 +26,11 @@ h1 {
 /* Blog Specific Styles */
 main {
     width: 80%;
-    max-width: 800px;
-    background-color: #222;
+    max-width: 1000px;
+    /* background-color: #222; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); */
     margin: 20px auto;
 }
 
@@ -155,3 +155,30 @@ main p, main ul, main ol, main blockquote {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+/* Style for code blocks */
+pre code {
+    display: block;
+    padding: 16px;
+    margin: 0;
+    overflow-x: auto;
+    background-color: #1a1a1a; /* Dark background for code blocks */
+    color: #f8f8f2; /* Light text color for readability */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+/* Highlighting different parts of the code */
+pre code .keyword { color: #ff79c6; } /* Keywords (e.g., import, def) */
+pre code .string { color: #f1fa8c; } /* Strings */
+pre code .comment { color: #6272a4; } /* Comments */
+pre code .function { color: #50fa7b; } /* Function names */
+pre code .variable { color: #bd93f9; } /* Variables */
+
+/* Add a small shadow to code blocks for a subtle 3D effect */
+pre {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
